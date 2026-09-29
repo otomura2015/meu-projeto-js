@@ -4,6 +4,13 @@ function Legal() {
 
 }
 
+function mostrar() {
+    let nome = document.getElementById("nome").value;
+
+    document.getElementById("resultado").textContent =
+        "Olá, " + nome + "!";
+}
+
 
 const SUPABASE_URL =
     "https://glkvjaonjxzfaayjvxop.supabase.co";
