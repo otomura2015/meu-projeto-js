@@ -4,13 +4,27 @@ function Legal() {
 
 }
 
+
 function mostrar() {
-    let nome = document.getElementById("nome").value;
+
+    let nome =
+        document.getElementById("nome").value;
+
+    if (nome === "") {
+
+        document.getElementById("resultado").textContent =
+            "Você não colocou seu nome!";
+
+        return;
+    }
 
     document.getElementById("resultado").textContent =
         "Olá, " + nome + "!";
+
 }
 
+
+// SUPABASE
 
 const SUPABASE_URL =
     "https://glkvjaonjxzfaayjvxop.supabase.co";
@@ -41,18 +55,18 @@ async function registrarVisita() {
             error
         );
 
-    } else {
-
-        console.log(
-            "Visita registrada com sucesso!"
-        );
-
-        mostrarVisitantes();
-
+        return;
     }
 
+    console.log(
+        "Visita registrada com sucesso!"
+    );
+
+    mostrarVisitantes();
 }
 
+
+// MOSTRA QUANTIDADE DE VISITANTES
 
 async function mostrarVisitantes() {
 
@@ -71,9 +85,14 @@ async function mostrarVisitantes() {
             error
         );
 
-        document.getElementById(
-            "contadorVisitantes"
-        ).textContent = "ERRO";
+        const contador =
+            document.getElementById(
+                "contadorVisitantes"
+            );
+
+        if (contador) {
+            contador.textContent = "ERRO";
+        }
 
         return;
     }
@@ -83,10 +102,17 @@ async function mostrarVisitantes() {
         count
     );
 
-    document.getElementById(
-        "contadorVisitantes"
-    ).textContent = count;
+    const contador =
+        document.getElementById(
+            "contadorVisitantes"
+        );
+
+    if (contador) {
+        contador.textContent = count;
+    }
 }
 
+
+// INICIA O SISTEMA
 
 registrarVisita();
