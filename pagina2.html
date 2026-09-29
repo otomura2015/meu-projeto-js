@@ -1,5 +1,7 @@
 <!DOCTYPE html>
 
+<html>
+
 <head>
 
     <title>Pagina legal</title>
@@ -48,14 +50,20 @@
             cursor: pointer;
         }
 
+        button:hover {
+            background: #ff5722;
+        }
 
         .div1 {
             width: 500px;
             padding: 40px;
+
             background: lightsalmon;
             color: #252525;
+
             border-radius: 25px;
-            box-shadow: #111;
+
+            box-shadow: 8px 8px 0px #111;
 
             text-align: center;
         }
@@ -65,7 +73,6 @@
 </head>
 
 <body>
-
 
     <div class="div1">
 
@@ -81,19 +88,25 @@
 
         <br><br>
 
-        <button onclick="gerarNumero()">sortear numero</button>
+        <button onclick="gerarNumero()">
+            Sortear numero
+        </button>
 
-        <h3 id="resultado">numero</h3>
+        <h3 id="resultado">
+            numero
+        </h3>
 
         <p>Coloque a senha</p>
 
         <input type="number" id="senha">
 
-        <button onclick="verificar()">Verificar senha</button>
-
-        <script src="script.js"></script>
+        <button onclick="verificar()">
+            Verificar senha
+        </button>
 
     </div>
+
+    <script src="script.js"></script>
 
 </body>
 
