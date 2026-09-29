@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+
+<head>
+
+    <title>Pagina legal</title>
+
+    <style>
+
+        body {
+            margin: 0;
+            min-height: 100vh;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            background: #202030;
+            font-family: Arial, sans-serif;
+        }
+
+        h1 {
+            margin-top: 0;
+            font-size: 35px;
+        }
+
+        input {
+            width: 80%;
+            padding: 15px;
+
+            border: none;
+            border-radius: 12px;
+
+            font-size: 20px;
+            outline: none;
+        }
+
+        button {
+            margin-top: 15px;
+            padding: 15px 30px;
+
+            border: none;
+            border-radius: 12px;
+
+            background: #ff7043;
+            color: white;
+
+            font-size: 20px;
+            cursor: pointer;
+        }
+
+
+        .div1 {
+            width: 500px;
+            padding: 40px;
+            background: lightsalmon;
+            color: #252525;
+            border-radius: 25px;
+            box-shadow: #111;
+
+            text-align: center;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+
+    <div class="div1">
+
+        <h1>Escolher numeros aleatorios!</h1>
+
+        <p>Minimo</p>
+
+        <input type="number" id="min">
+
+        <p>Maximo</p>
+
+        <input type="number" id="max">
+
+        <br><br>
+
+        <button onclick="gerarNumero()">sortear numero</button>
+
+        <h3 id="resultado">numero</h3>
+
+        <p>Coloque a senha</p>
+
+        <input type="number" id="senha">
+
+        <button onclick="verificar()">Verificar senha</button>
+
+        <script src="script.js"></script>
+
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <title>Outra pagina</title>
+
+    <style>
+
+        body {
+            background-color: #000033;
+        }
+
+        .div1 {
+            background-color: #6a1b9a;
+            position: absolute;
+            top: 25px;
+            left: 50px;
+            color: #000000;
+            border: 3px ridge #32004f;
+            font-family: "Comic Sans MS", cursive;
+            padding: 10px;
+            margin: 25px;
+        }
+
+        .div3 {
+            background-color: #6a1b9a;
+            position: absolute;
+            top: 25px;
+            left: 800px;
+            color: #000000;
+            border: 3px ridge #32004f;
+            font-family: "Comic Sans MS", cursive;
+            padding: 40px;
+            margin: 40px;
+        }
+
+        button {
+            margin-top: 15px;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 12px;
+            background-color: #c000fa;
+            color: black;
+            font-size: 20px;
+            cursor: pointer;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <div class="div1">
+
+        <h1>MEU BLOG</h1>
+
+        <p>Meu nome é abel!</p>
+
+        <img src="meme.jpg"
+             alt="Cachorro refletindo"
+             width="300"
+             height="300">
+
+        <br>
+
+        <button onclick="Legal()">
+            Botao legal
+        </button>
+
+        <div class="div2">
+
+            <h1>ULTIMAS NOVIDADES</h1>
+
+            <h3>Uma criança virou adm desse site</h3>
+
+            <p>
+                Uma criança que esta aprendendo HTML, CSS é dona do site
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <div class="div3">
+
+        <h1>NUMERO DE PESSOAS QUE VIRAM ESSE SITE</h1>
+
+        <h2>
+            Visitantes:
+            <span id="contadorVisitantes">...</span>
+        </h2>
+
+    </div>
+
+
+    <!-- SUPABASE -->
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+    <!-- SEU JAVASCRIPT -->
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
